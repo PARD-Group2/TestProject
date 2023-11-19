@@ -22,6 +22,7 @@ const Div = styled.div`
 function App() {
   return (
     // 메인 페이지입니다.
+    // 현중이형 고생했엉
     <Div>
       <h1>LDJ 2조 Main page</h1>
     </Div>
