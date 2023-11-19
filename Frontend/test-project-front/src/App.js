@@ -18,7 +18,7 @@ const Div = styled.div`
   border-radius: 30px;
 `;
 
-function App() {s
+function App() {
   return (
     <Div>
       <h1>LDJ 2조 Main page</h1>
