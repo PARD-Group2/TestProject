@@ -14,6 +14,8 @@ import UserProvider from "./test/joo/userContext";
 // import Login from './test/kwang/login';
 // import LoginOk from './test/kwang/LoginOk'; 
 
+import LoginOk from './test/kwang/LoginOk'; // Dashboard 컴포넌트는 존재하지 않는 예시입니다. 실제 프로젝트에 맞게 수정하세요.
+
 
 // 기본 배경 (for temp)
 const Div = styled.div`
@@ -45,14 +47,14 @@ function App() {
   // );
 
   // case 광일
-    // return (
-    //     <Router>
-    //         <Routes>
-    //             <Route index path="/" element={<Login />}/>
-    //             <Route path="/loginok" element={<LoginOk />}/>
-    //         </Routes>
-    //     </Router>
-    // );
+  // return (
+  //     <Router>
+  //         <Routes>
+  //             <Route index path="/" element={<Login />}/>
+  //             <Route path="/loginok" element={<LoginOk />}/>
+  //         </Routes>
+  //     </Router>
+  // );
 
   // case 주영
   return (
