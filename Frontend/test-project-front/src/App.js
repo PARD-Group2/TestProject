@@ -3,12 +3,12 @@ import styled from "styled-components";
 import "./App.css";
 
 // case 주영
-import Login from "./test/joo/login"
-import UserName from "./test/joo/userName"
-import UserProvider from "./test/joo/userContext";
+// import Login from "./test/joo/login"
+// import UserName from "./test/joo/userName"
+// import UserProvider from "./test/joo/userContext";
 
 // case 현중
-// import HJLogin from "./test/hyeon/login";
+import HJLogin from "./test/hyeon/login";
 
 // case 광일
 // import Login from './test/kwang/login';
@@ -20,31 +20,32 @@ import LoginOk from './test/kwang/LoginOk'; // Dashboard 컴포넌트는 존재�
 // 기본 배경 (for temp)
 const Div = styled.div`
   /* 가로, 길이 */
-  width: 50vw;
-  height: 50vh;
+  width: ${props => props.width || "50vw"};
+  height: ${props => props.height || "50vh"};
 
   /* 배치 */
-  margin: 25vh auto;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  display: ${props => props.display || "flex"};;
+  margin: ${props => props.margin || "25vh auto"};
+  justify-content: ${props => props.justifyContent || "center"};
+  align-items: ${props => props.alignItems || "center"};
+  
 
   /* 배경색 */
-  background-color: aqua;
-  border-radius: 30px;
+  background-color: ${props => props.backgroundColor || "aqua"};
+  border-radius: ${props => props.borderRadius || "30px"};
 `;
 
 function App() {
 
   // case 현중
-  // return (
-  //   <div>
-  //     <Div>
-  //       <h1>LDJ 2조 Main page</h1>
-  //     </Div>
-  //     <HJLogin />
-  //   </div>
-  // );
+  return (
+    <Div width="30vw">
+      <Div>
+        <h1>LDJ 2조 Main page</h1>
+      </Div>
+      <HJLogin />
+    </Div>
+  );
 
   // case 광일
   // return (
@@ -56,19 +57,19 @@ function App() {
   //     </Router>
   // );
 
-  // case 주영
-  return (
-    <Router>
+  // // case 주영
+  // return (
+  //   <Router>
 
-      <UserProvider>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/userName" element={<UserName />} />
-        </Routes>
-      </UserProvider>
+  //     <UserProvider>
+  //       <Routes>
+  //         <Route path="/" element={<Login />} />
+  //         <Route path="/userName" element={<UserName />} />
+  //       </Routes>
+  //     </UserProvider>
 
-    </Router>
-  );
+  //   </Router>
+  // );
 
 }
 
