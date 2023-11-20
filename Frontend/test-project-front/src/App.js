@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import "./App.css";
+import HJLogin from "./test/hyeon/login";
 
 // 기본 배경 (for temp)
 const Div = styled.div`
@@ -20,9 +21,12 @@ const Div = styled.div`
 
 function App() {
   return (
-    <Div>
-      <h1>LDJ 2조 Main page</h1>
-    </Div>
+    <div>
+      <Div>
+        <h1>LDJ 2조 Main page</h1>
+      </Div>
+      <HJLogin />
+    </div>
   );
 }
 
