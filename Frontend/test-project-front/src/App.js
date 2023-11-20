@@ -1,9 +1,15 @@
 import styled from "styled-components";
 import "./App.css";
-import HJLogin from "./test/hyeon/login";
+
+// import HJLogin from "./test/hyeon/login";
+
+import Login from './test/kwang/login';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import LoginOk from './test/kwang/LoginOk'; // Dashboard 컴포넌트는 존재하지 않는 예시입니다. 실제 프로젝트에 맞게 수정하세요.
+
 
 // 기본 배경 (for temp)
-const Div = styled.div`
+const Div = styled.div `
   /* 가로, 길이 */
   width: 50vw;
   height: 50vh;
@@ -20,14 +26,24 @@ const Div = styled.div`
 `;
 
 function App() {
-  return (
-    <div>
-      <Div>
-        <h1>LDJ 2조 Main page</h1>
-      </Div>
-      <HJLogin />
-    </div>
-  );
+
+  // return (
+  //   <div>
+  //     <Div>
+  //       <h1>LDJ 2조 Main page</h1>
+  //     </Div>
+  //     <HJLogin />
+  //   </div>
+  // );
+
+    return (
+        <Router>
+            <Routes>
+                <Route index path="/" element={<Login />}/>
+                <Route path="/loginok" element={<LoginOk />}/>
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
