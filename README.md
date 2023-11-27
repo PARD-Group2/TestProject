@@ -4,4 +4,5 @@
 
 ### 프로젝트 설명
 
-PARD 2기 숏커톤을 위한 연습 Repository입니다.
+PARD 2기 숏커톤을 위한 연습 Repository입니다.  
+최종 2등//done.
